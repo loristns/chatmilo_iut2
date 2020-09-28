@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatmilo - Contrôle vocal</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+        html, body {
+            background-color: black;
+            color: white;
+            font-family: 'Press Start 2P', Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+        }
+
+        button {
+            border: none;
+            background-color: black;
+            color: white;
+            font-family: inherit;
+        }
+    </style>
+</head>
+<body>
+    <h1>Autoriser Chatmilo à accéder à votre microphone <br> pour utiliser le contrôle vocal.</h1>
+
+    <button id="autorise">Autoriser</button>
+
+    <script src="./request-speech.js"></script>
+</body>
+</html>
