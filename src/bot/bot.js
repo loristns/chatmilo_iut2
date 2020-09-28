@@ -18,7 +18,7 @@ const classSlot = new wisty.slots.CategoricalSlot({
     name: 'class',
     categories: {
         m3100: [
-            'M3100', 'm3100', 'semaine anglaise', "semaine bloquée en anglais"
+            'M3100', 'm3100', 'semaine anglaise', 'semaine bloquée en anglais'
         ],
         m3101: [
             'M3101', 'm3101', "principe des systèmes d'exploitation",
@@ -101,7 +101,7 @@ export const nlu = new wisty.tools.NLUFormatter({
 export async function train() {
     await bot.init();
 
-    const dataset = await fetch('./dataset.md').then(response => response.text());
+    const dataset = await fetch('./dataset.md').then((response) => response.text());
     const { stories } = wisty.tools.parseWistyML(dataset);
 
     await bot.train({
@@ -116,40 +116,40 @@ export async function train() {
 export async function load() {
     await bot.init();
 
-    const model = await fetch('./model.json').then(response => response.text());
+    const model = await fetch('./model.json').then((response) => response.text());
     bot.load(model);
 }
 
 export const actions = {
     openADE: {
-        message: "Ouverture de votre agenda",
+        message: 'Ouverture de votre agenda',
         url: 'https://scolarite-informatique.iut2.univ-grenoble-alpes.fr/app/edtGroupe.php'
     },
 
     askClass: {
-        message: "Quel module souhaitez-vous ouvrir ?"
+        message: 'Quel module souhaitez-vous ouvrir ?'
     },
 
     openClass: {
-        message: "Ouverture du module $class",
+        message: 'Ouverture du module $class',
         url: 'https://chamilo.iut2.univ-grenoble-alpes.fr/courses/INFO$class/index.php'
     },
 
     openNotes: {
-        message: "Ouverture de votre bulletin de notes",
+        message: 'Ouverture de votre bulletin de notes',
         url: 'https://scolarite-informatique.iut2.univ-grenoble-alpes.fr/app/ficheEtudiant.php'
     },
 
     openZimbra: {
-        message: "Ouverture de votre messagerie Zimbra",
+        message: 'Ouverture de votre messagerie Zimbra',
         url: 'https://webmail.etu.univ-grenoble-alpes.fr'
     },
 
     unknown: {
-        message: "Désolé, je ne peut pas répondre à votre requête. Je peut ouvrir vos cours, vos mails, vos notes et votre agenda."
+        message: 'Désolé, je ne peut pas répondre à votre requête. Je peut ouvrir vos cours, vos mails, vos notes et votre agenda.'
     },
 
     help: {
-        message: "Je suis Chatmilo, je peut ouvrir vos cours, vos mails, vos notes et votre agenda."
+        message: 'Je suis Chatmilo, je peut ouvrir vos cours, vos mails, vos notes et votre agenda.'
     }
-}
+};

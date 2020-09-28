@@ -132,7 +132,7 @@ export default {
         });
 
         if (this.speechRecognition !== undefined) {
-            //this.speechRecognition.lang = 'fr-FR';
+            this.speechRecognition.lang = 'fr-FR';
             this.speechRecognition.continuous = true;
             this.speechRecognition.onresult = this.onNewRecord;
             this.speechRecognition.onerror = this.SRNotAllowed;
