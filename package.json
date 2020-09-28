@@ -32,7 +32,8 @@
       "browser": true
     },
     "extends": [
-      "airbnb-base"
+      "airbnb-base",
+      "plugin:vue/base"
     ],
     "globals": {
       "Atomics": "readonly",
