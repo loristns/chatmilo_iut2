@@ -17,14 +17,17 @@
             />
 
             <button @click="newMessage()"> > </button>
-            | 
-            <button
-                @click="toggleSR()"
-                 v-if="speechRecognition !== undefined"
-                 :class="{ isRecording }"
-            >
-                ?
-            </button>
+
+            <span v-if="speechRecognition !== undefined">
+                | 
+                <button
+                    @click="toggleSR()"
+                    :class="{ isRecording }"
+                >
+                    ?
+                </button>
+            </span>
+
         </div>
 
     </main>
