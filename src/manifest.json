@@ -16,5 +16,10 @@
     "default_icon": {
       "128": "icons/128.png"
     }
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "Chatmilo@IUT2"
+    }
   }
 }

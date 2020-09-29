@@ -3,7 +3,7 @@ import * as wisty from 'wisty';
 const bow = new wisty.featurizers.BOW(200);
 
 const frenchEmbeddings = new wisty.tools.KeyedVectors({
-    loaderFunction: async () => fetch('./fr.wiki.bpe.vs10000.d25.w2v.json').then(
+    loaderFunction: async () => fetch('./fr.wiki.bpe.vs5000.d25.w2v.json').then(
         (response) => response.text()
     ),
     size: 25,
