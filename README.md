@@ -20,8 +20,9 @@ L'extension est basée sur [Wisty.js](https://github.com/the-new-sky/Wisty.js) p
 
 - Firefox :
     1. Télécharger l'extension au [format xpi](https://github.com/the-new-sky/chatmilo_iut2/blob/master/artifacts/chatmiloiut2-0.1.0-fx.xpi?raw=true)
-    2. Ajouter l'extension
-    3. 👌
+    2. Lorsque la fenêtre de téléchargement s'ouvre, choisir "Ouvrir le fichier avec" et sélectionner Firefox.
+    3. Ajouter l'extension
+    4. 👌
 
 ## Développement
 
