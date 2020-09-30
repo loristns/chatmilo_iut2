@@ -18,7 +18,10 @@ L'extension est basée sur [Wisty.js](https://github.com/the-new-sky/Wisty.js) p
     7. Epingler l'extension pour un accès plus rapide
     8. 👌
 
-- Firefox : *WIP*
+- Firefox :
+    1. Télécharger l'extension au [format xpi](https://github.com/the-new-sky/chatmilo_iut2/blob/master/artifacts/chatmiloiut2-0.1.0-fx.xpi?raw=true)
+    2. Ajouter l'extension
+    3. 👌
 
 ## Développement
 
