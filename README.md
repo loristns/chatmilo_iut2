@@ -9,7 +9,7 @@ L'extension est basée sur [Wisty.js](https://github.com/the-new-sky/Wisty.js) p
 ## Installation
 
 - Chrome :
-    1. Télécharger l'extension au [format zip](https://github.com/the-new-sky/chatmilo_iut2/blob/master/prod/chatmilo_iut2-v0.1.0-production.zip?raw=true)
+    1. Télécharger l'extension au [format zip](https://github.com/the-new-sky/chatmilo_iut2/blob/master/artifacts/chatmilo_iut2-v0.1.0-production.zip?raw=true)
     2. Dézipper et placer le dossier de l'extension dans un répertoire stable
     3. Ouvrir `chrome://extensions`
     4. Activer le mode développeur
